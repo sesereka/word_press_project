@@ -2440,7 +2440,7 @@ function wp_ajax_save_widget() {
         }
 		wp_die();
 	}
-		wp_die();
+		
 
 	$form = $wp_registered_widget_controls[ $widget_id ];
 	if ( $form ) {
