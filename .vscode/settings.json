@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "sesereka",
+        "projectKey": "sesereka_word_press_project"
+    }
+}
