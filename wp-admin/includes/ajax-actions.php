@@ -2431,7 +2431,7 @@ function wp_ajax_save_widget() {
 	if ( isset( $_POST['delete_widget'] ) && $_POST['delete_widget'] ) {
         //Assainir l'ID du widget avant de l'utiliser pour éviter les attaques XSS
         $widget_id =sanitize_key($POST['delete_widget']);
-        if (! empty($widget_id){
+        if (! empty($widget_id)){
             $sidebars[ $sidebar_id ] = $sidebar;
             wp_set_sidebars_widgets( $sidebars );
             echo "deleted:" . htmlspecialchars( $widget_id, ENT_QUOTES ); // Utilisation de htmlspecialchars pour empêcher l'injection de HTML
