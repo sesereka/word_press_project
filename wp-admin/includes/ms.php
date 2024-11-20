@@ -966,6 +966,7 @@ function confirm_delete_users( $users ) {
 							<li><label><input type="radio" id="delete_option1" name="delete[<?php echo $details->userblog_id . '][' . $delete_user->ID; ?>]" value="reassign" />
 							<?php _e( 'Attribute all content to:' ); ?></label>
 							<?php echo $user_dropdown; ?></li>
+							echo **htmlspecialchars($details->userblog_id, ENT_QUOTES)** . '][' . **htmlspecialchars($delete_user->ID, ENT_QUOTES)**;
 						</ul>
 						<?php
 					}

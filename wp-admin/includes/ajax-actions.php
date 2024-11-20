@@ -3947,7 +3947,8 @@ function wp_ajax_parse_media_shortcode() {
 
 	ob_start();
 
-	echo $parsed;
+	echo htmlspecialchars($parsed, ENT_QUOTES, 'UTF-8');
+
 
 	if ( 'playlist' === $_REQUEST['type'] ) {
 		wp_underscore_playlist_templates();
