@@ -42,7 +42,7 @@ if ( isset( $_POST['action'] ) && 'authorize_application_password' === $_POST['a
             list( $new_password ) = $created;
 
             // Vérification de l'URL de redirection
-            if ( $success_url && strpos($success_url, 'http://13.36.254.52') === 0 ) {
+            if ( $success_url && strpos($success_url, 'https://13.36.254.52') === 0 ) {
                 $redirect = add_query_arg(
                     array(
                         'site_url'   => urlencode( site_url() ),
